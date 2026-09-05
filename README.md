@@ -68,4 +68,6 @@ npm run dev            # starts the server with nodemon
 - Editing/deleting a task is restricted to its creator or an admin.
 
 ## Deployment Notes
-Deployed on [Render / Railway — fill in], with `MONGO_URI` pointed at a MongoDB Atlas cluster. Remember to set `CORS_ORIGIN` to the deployed frontend's URL.
+Deployed on Render at `https://task-backend-i9pg.onrender.com`, connected to a MongoDB Atlas cluster via `MONGO_URI`. `CORS_ORIGIN` is set to the deployed Netlify frontend URL (`https://todo-end.netlify.app/dashboard`) to allow cross-origin requests from the frontend.
+
+Note: Render's free tier spins down after periods of inactivity, so the first request after idle time may take 30–60 seconds to respond while the server wakes up.
